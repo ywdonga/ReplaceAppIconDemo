@@ -1,14 +1,25 @@
 iOS10.3更换App图标
+
 [GitHub地址](https://github.com/ywdonga/ReplaceAppIconDemo)
+
 ###效果：
+
 ![Jietu20191025-150526.gif](https://upload-images.jianshu.io/upload_images/1760826-38b6e0b1407bb275.gif?imageMogr2/auto-orient/strip)
+
 ###步骤：
+
 #####1.确保`Assets.xcassets`内无任何图片
+
 ![15719850866178.jpg](https://upload-images.jianshu.io/upload_images/1760826-ad2baec723bdfdc1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 #####2.将图标拖入项目中，不能使用`Assets.xcassets`，只能拖入项目。图片大小为60的2倍和3倍，即`@2x 120*120``@3x 180*180`
+
 ![15719852465125.jpg](https://upload-images.jianshu.io/upload_images/1760826-310181edc794ed90.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 #####3.配置`info.plist`，很容易出错，一定要仔细，怕出错可以复制下面的内容，然后替换下图片名称。
+
 ![15719858457694.jpg](https://upload-images.jianshu.io/upload_images/1760826-c3769df46534a687.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -76,13 +87,16 @@ iOS10.3更换App图标
 </dict>
 </plist>
 ```
+
 #####4.代码获取当前图标、更换图标
+
 获取当前图标文件名
 ```
 if (@available(iOS 10.3, *)) {
         NSString *iconName = [UIApplication sharedApplication].alternateIconName;
     }
 ```
+
 更换图标
 ```
 if (@available(iOS 10.3, *)) {
