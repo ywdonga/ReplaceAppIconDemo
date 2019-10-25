@@ -1,5 +1,5 @@
-# ReplaceAppIconDemo
 iOS10.3更换App图标
+[GitHub地址](https://github.com/ywdonga/ReplaceAppIconDemo)
 ###效果：
 ![Jietu20191025-150526.gif](https://upload-images.jianshu.io/upload_images/1760826-38b6e0b1407bb275.gif?imageMogr2/auto-orient/strip)
 ###步骤：
