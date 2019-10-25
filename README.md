@@ -4,7 +4,7 @@ iOS10.3更换App图标
 
 ###效果：
 
-![Jietu20191025-150526.gif](https://upload-images.jianshu.io/upload_images/1760826-38b6e0b1407bb275.gif?imageMogr2/auto-orient/strip)
+![Jietu20191025-150526.gif](https://upload-images.jianshu.io/upload_images/1760826-38b6e0b1407bb275.gif?imageMogr2/auto-orient/strip|imageView2/2/w/237/format/webp)
 
 ###步骤：
 
