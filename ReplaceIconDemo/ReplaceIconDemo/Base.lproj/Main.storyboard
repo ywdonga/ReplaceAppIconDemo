@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="941-wb-eFn">
+                                <rect key="frame" x="12" y="432.5" width="390" height="32"/>
+                                <segments>
+                                    <segment title="默认图标"/>
+                                    <segment title="图标1"/>
+                                    <segment title="图标2"/>
+                                    <segment title="图标3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changedIcon:" destination="BYZ-38-t0r" eventType="valueChanged" id="NVb-xa-wcl"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="cV6-Sx-Hh8">
+                                <rect key="frame" x="12" y="330.5" width="97.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cV6-Sx-Hh8" secondAttribute="height" multiplier="79:73" id="fws-4w-B9Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AzE-fh-af2">
+                                <rect key="frame" x="109.5" y="330.5" width="97.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AzE-fh-af2" secondAttribute="height" multiplier="79:73" id="8cF-y7-wOl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-sv-7lA">
+                                <rect key="frame" x="207" y="330.5" width="97.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gt2-sv-7lA" secondAttribute="height" multiplier="79:73" id="F8H-1C-eB0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="dha-et-fzE">
+                                <rect key="frame" x="304.5" y="330.5" width="97.5" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dha-et-fzE" secondAttribute="height" multiplier="79:73" id="5p9-O1-sFi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="top" secondItem="dha-et-fzE" secondAttribute="bottom" constant="12" id="20w-Oe-LrP"/>
+                            <constraint firstItem="dha-et-fzE" firstAttribute="height" secondItem="cV6-Sx-Hh8" secondAttribute="height" id="2KI-JW-gqD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="941-wb-eFn" secondAttribute="trailing" constant="12" id="3Bw-D9-Pm6"/>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="top" secondItem="AzE-fh-af2" secondAttribute="bottom" constant="12" id="46U-uc-coy"/>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="top" secondItem="gt2-sv-7lA" secondAttribute="bottom" constant="12" id="8zk-QR-5aG"/>
+                            <constraint firstItem="dha-et-fzE" firstAttribute="leading" secondItem="gt2-sv-7lA" secondAttribute="trailing" id="A8Z-4b-JKr"/>
+                            <constraint firstItem="dha-et-fzE" firstAttribute="width" secondItem="cV6-Sx-Hh8" secondAttribute="width" id="AlA-sa-zxd"/>
+                            <constraint firstItem="gt2-sv-7lA" firstAttribute="height" secondItem="cV6-Sx-Hh8" secondAttribute="height" id="Ene-9U-hJi"/>
+                            <constraint firstItem="cV6-Sx-Hh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="KDW-Zg-7YI"/>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Quz-IM-pgP"/>
+                            <constraint firstItem="gt2-sv-7lA" firstAttribute="width" secondItem="cV6-Sx-Hh8" secondAttribute="width" id="TRF-d7-F4x"/>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aSy-Q6-6aI"/>
+                            <constraint firstItem="gt2-sv-7lA" firstAttribute="leading" secondItem="AzE-fh-af2" secondAttribute="trailing" id="bMm-V7-yIW"/>
+                            <constraint firstItem="AzE-fh-af2" firstAttribute="height" secondItem="cV6-Sx-Hh8" secondAttribute="height" id="bOc-Nt-IXy"/>
+                            <constraint firstItem="AzE-fh-af2" firstAttribute="width" secondItem="cV6-Sx-Hh8" secondAttribute="width" id="e4R-aG-XNF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dha-et-fzE" secondAttribute="trailing" constant="12" id="oTn-Tt-oso"/>
+                            <constraint firstItem="AzE-fh-af2" firstAttribute="leading" secondItem="cV6-Sx-Hh8" secondAttribute="trailing" id="p6E-OJ-iyK"/>
+                            <constraint firstItem="941-wb-eFn" firstAttribute="top" secondItem="cV6-Sx-Hh8" secondAttribute="bottom" constant="12" id="tTS-kZ-J2e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmented" destination="941-wb-eFn" id="XCc-XT-MdV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_icon_0.png" width="60" height="60"/>
+        <image name="app_icon_1.png" width="60" height="60"/>
+        <image name="app_icon_2.png" width="60" height="60"/>
+        <image name="app_icon_3.png" width="60" height="60"/>
+    </resources>
+</document>
